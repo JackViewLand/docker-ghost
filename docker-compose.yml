@@ -25,7 +25,7 @@ services:
       - ./ghost/content:/var/lib/ghost/content:z
     expose:
     - "3306"
-    environment: # this section can be commented to start in dev mode by default
+    environment:
       - NODE_ENV=production # set either production or development, then it will load the respective config
     networks:
       - nginx
@@ -36,15 +36,14 @@ services:
     image: mysql:latest
     container_name: mysql
     volumes:
-      - ./dbdata:/var/lib/mysql:z  # Persist storage
+      - ./dbdata:/var/lib/mysql:z
     expose:
       - "3306"
     environment:
-      # Beware of special characters in password that can be interpreted by shell
-      - MYSQL_ROOT_PASSWORD=root #specify your root pass
+      - MYSQL_ROOT_PASSWORD=root #修改root密碼
       - MYSQL_DATABASE=ghostdata
-      - MYSQL_USER=ghost
-      - MYSQL_PASSWORD=ghost #please change this
+      - MYSQL_USER=ghost #修改使用者名稱
+      - MYSQL_PASSWORD=ghost #修改使用者密碼
     networks:
       - ghost
     restart: always

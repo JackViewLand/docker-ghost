@@ -1,5 +1,5 @@
 {
-    "url": "http://ghost.jack0420.shop",
+    "url": "http://ghost.jack0420.shop", #修改自己的域名
     "server": {
         "port": 2368,
         "host": "0.0.0.0"
@@ -9,9 +9,9 @@
         "connection": {
             "host": "mysql",
             "port": 3306,
-            "user": "",
-            "password": "",
-            "database": "ghostdata",
+            "user": "ghost", #填入mysql使用者
+            "password": "ghost", #填入mysql使用者密碼
+            "database": "ghostdata", #填入使用的database
             "charset": "utf8mb4"
         }
     },
