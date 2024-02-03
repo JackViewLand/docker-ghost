@@ -1,0 +1,11 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Certificates related files
+nginx/certs/*.crt
+nginx/certs/*.pem
+nginx/certs/*.key
+
+#Config files
+*.lab.json
