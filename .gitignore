@@ -9,3 +9,6 @@ nginx/certs/*.key
 
 #Config files
 *.lab.json
+
+#waf rule
+#nginx/waf/access.lua
