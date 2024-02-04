@@ -1,5 +1,6 @@
 # docker-ghost
 ```使用docker自行搭建ghost部落格```
+- [架構圖](#架構圖)
 - [操作步驟](#操作步驟)
   - [將專案clone下來](#將專案clone下來)
   - [nginx部分](#nginx部分)
@@ -16,6 +17,9 @@
 git clone https://github.com/JackViewLand/docker-ghost.git
 ```
 將自己https憑證放在 ```nginx/certs``` 資料夾中
+
+# 架構圖
+<img width="774" alt="ghost-compose-context" src="https://github.com/JackViewLand/docker-ghost/assets/122655131/0bed11af-2f21-4c13-9bf2-853b63cd94c9">
 
 # 修改設定檔
 ## nginx部分
